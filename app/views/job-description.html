@@ -1,0 +1,126 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Question page
+{% endblock %}
+
+{% block pageScripts %}
+<script type="text/javascript" src="assets/js/accessible-autocomplete.min.js"></script>
+{% endblock %}
+
+{% block beforeContent %}
+  <a class="govuk-back-link" href="job-details-summary">Back</a>
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+<h1 class ="govuk-heading-xl"> Job description
+  </h1>
+
+  <h2 class="govuk-heading-m"> Directorate summary </h2>
+  <div class="govuk-form-group">
+    <label class="govuk-label" for="more-detail">
+      Digital directorate
+    </label>
+    <span id="more-detail-hint" class="govuk-hint">
+      We have provided you with the approved digital directorate summary, only edit this text if necessary.
+    </span>
+    <textarea class="govuk-textarea" id="more-detail" name="more-detail" rows="10" aria-describedby="more-detail-hint"> The digital directorate is now 18 months old and has transitioned from a set-up phase to a more mature team with an acknowledged role in the department.
+
+Our refreshed digital strategy for 2020 identifies five areas for attention:
+
+• Excellent technology support: continuing to improve our new office system, including wifi, sharepoint, training and overhauling the customer experience of contacting IT teams
+
+• Improving critical corporate processes with digital problem-solving skills: like onboarding new staff, business cases, grant payments and online policy consultations
+
+• PropTech & digital planning: working hand in hand with the housing and planning policy teams to put digital at the centre of our policy agenda, while producing machine-ready data to drive the PropTech revolution
+
+• Local government digital: continuing the work of the Local Digital Fund designed to modernise local services by creating reusable technical patterns to improve productivity, the citizen experience and to reduce cyber risks
+
+• Digital capability and new ways of working: improving the departments’ digital awareness by working openly and sharing skills, and offering digital training to get the most from the new office technology
+    </textarea>
+</div>
+
+  <h2 class="govuk-heading-m"> Role responsibilities </h2>
+  <div class="govuk-form-group">
+    <label class="govuk-label" for="more-detail">
+      Service Designer
+    </label>
+    <span id="more-detail-hint" class="govuk-hint">
+      We have provided you with the role responsibilties identified for a Service Designer, you can edit and add additional responsibilties
+    </span>
+    <textarea class="govuk-textarea" id="more-detail" name="more-detail" rows="10" aria-describedby="more-detail-hint">As a Service Designer you will:
+
+• Analyse failure within services and identify root causes for that failure
+
+• Identify opportunities for cost reduction and improvement within an existing service
+
+• Understand user needs and identify where separate interactions with government should act as one service that meet that need
+
+• Arrange these separate interactions into rational user journeys within that service
+
+• Look for commonalities in activities across services where products could be made
+
+• Understand the existing supporting system of a service and design targeted improvements to that system to accommodate the new service - both digital and process based
+
+• Create and rapidly iterate service prototypes
+
+• Identify and design new cross government service patterns and standards
+</textarea>
+</div>
+<h2 class="govuk-heading-m"> Skills and experience </h2>
+<div class="govuk-form-group">
+  <label class="govuk-label" for="more-detail">
+    Service Designer
+  </label>
+  <span id="more-detail-hint" class="govuk-hint">
+    We have provided you with the skills and experience needed for a Service Designer, you can edit and add additional skills
+  </span>
+  <textarea class="govuk-textarea" id="more-detail" name="more-detail" rows="10" aria-describedby="more-detail-hint">The ideal candidate will:
+
+• Know how the internet works
+
+• Have a design related degree, or relevant industry experience
+
+• Be able to sketch and prototype on paper and in HTML
+
+• Be able to work quickly in an agile environment
+
+• Be able to explain ideas in a way that other people understand
+
+• Welcome the constructive criticism of their work and be able to constructively review the work of others
+
+• Know how to interpret user research
+
+• Understand how form and function work together
+
+• Know how to remove complexity from services
+
+• Be able to write for user interfaces
+
+• Explain design decisions and be able to represent a service at a service assessment
+
+• Assess a service and give constructive feedback
+
+• Put forward the case for design with a product manager
+
+• Collaborate on designs with a developer
+
+• Engage the whole multidisciplinary team with the design process
+
+• Lead a workshop
+
+• Work at pace
+
+</textarea>
+
+
+  <form class="form" action="assessing-candidates" method="post">
+  <button class="govuk-button" data-module="govuk-button">
+  Continue to assessing candidates
+  </button>
+  </form>
+
+{% endblock %}

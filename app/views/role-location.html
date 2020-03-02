@@ -1,0 +1,141 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Question page
+{% endblock %}
+
+{% block pageScripts %}
+<script type="text/javascript" src="assets/js/accessible-autocomplete.min.js"></script>
+{% endblock %}
+
+{% block beforeContent %}
+  <a class="govuk-back-link" href="/url/of/previous/page">Back</a>
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      <div class="govuk-form-group">
+    <fieldset class="govuk-fieldset" aria-describedby="waste-hint">
+      <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">
+        <h1 class="govuk-fieldset__heading">
+          What locations can this role be based?
+        </h1>
+      </legend>
+      <span id="location-hint" class="govuk-hint">
+        Select all that apply.
+      </span>
+      <div class="govuk-checkboxes">
+        <div class="govuk-checkboxes__item">
+          <input class="govuk-checkboxes__input" id="location" name="location" type="checkbox" value="London">
+          <label class="govuk-label govuk-checkboxes__label" for="location">
+            London
+          </label>
+        </div>
+        <div class="govuk-checkboxes__item">
+          <input class="govuk-checkboxes__input" id="location-2" name="location" type="checkbox" value="Birkenhead">
+          <label class="govuk-label govuk-checkboxes__label" for="location-2">
+            Birkenhead
+          </label>
+        </div>
+        <div class="govuk-checkboxes__item">
+          <input class="govuk-checkboxes__input" id="location-3" name="location" type="checkbox" value="Birmingham">
+          <label class="govuk-label govuk-checkboxes__label" for="location-3">
+            Birmingham
+          </label>
+        </div>
+        <div class="govuk-checkboxes__item">
+          <input class="govuk-checkboxes__input" id="location-4" name="location" type="checkbox" value="Bristol">
+          <label class="govuk-label govuk-checkboxes__label" for="location-4">
+          Bristol
+          </label>
+        </div>
+        <div class="govuk-checkboxes__item">
+          <input class="govuk-checkboxes__input" id="location-5" name="location" type="checkbox" value="Cambridge">
+          <label class="govuk-label govuk-checkboxes__label" for="location-5">
+            Cambridge
+          </label>
+        </div>
+        <div class="govuk-checkboxes__item">
+          <input class="govuk-checkboxes__input" id="location-6" name="location" type="checkbox" value="Exeter">
+          <label class="govuk-label govuk-checkboxes__label" for="location-6">
+          Exeter
+          </label>
+        </div>
+        <div class="govuk-checkboxes__item">
+          <input class="govuk-checkboxes__input" id="location-7" name="location" type="checkbox" value="Hastings">
+          <label class="govuk-label govuk-checkboxes__label" for="location-7">
+            Hastings
+          </label>
+        </div>
+        <div class="govuk-checkboxes__item">
+          <input class="govuk-checkboxes__input" id="location-8" name="location" type="checkbox" value="Hemel Hempstead">
+          <label class="govuk-label govuk-checkboxes__label" for="location-8">
+            Hemel Hempstead
+          </label>
+        </div>
+        <div class="govuk-checkboxes__item">
+          <input class="govuk-checkboxes__input" id="location-9" name="location" type="checkbox" value="Leeds">
+          <label class="govuk-label govuk-checkboxes__label" for="location-9">
+            Leeds
+          </label>
+        </div>
+        <div class="govuk-checkboxes__item">
+          <input class="govuk-checkboxes__input" id="location-10" name="location" type="checkbox" value="Manchester">
+          <label class="govuk-label govuk-checkboxes__label" for="location-10">
+            Manchester
+          </label>
+        </div>
+        <div class="govuk-checkboxes__item">
+          <input class="govuk-checkboxes__input" id="location-11" name="location" type="checkbox" value="Newcastle">
+          <label class="govuk-label govuk-checkboxes__label" for="location-11">
+            Newcastle
+          </label>
+        </div>
+        <div class="govuk-checkboxes__item">
+          <input class="govuk-checkboxes__input" id="location-12" name="location" type="checkbox" value="Nottingham">
+          <label class="govuk-label govuk-checkboxes__label" for="location-12">
+            Nottingham
+          </label>
+        </div>
+        <div class="govuk-checkboxes__item">
+          <input class="govuk-checkboxes__input" id="location-13" name="location" type="checkbox" value="Plymouth">
+          <label class="govuk-label govuk-checkboxes__label" for="location-13">
+            Plymouth
+          </label>
+        </div>
+        <div class="govuk-checkboxes__item">
+          <input class="govuk-checkboxes__input" id="location-14" name="location" type="checkbox" value="Sheffield">
+          <label class="govuk-label govuk-checkboxes__label" for="location-14">
+            Sheffield
+          </label>
+        </div>
+        <div class="govuk-checkboxes__item">
+          <input class="govuk-checkboxes__input" id="location-15" name="location" type="checkbox" value="Truro">
+          <label class="govuk-label govuk-checkboxes__label" for="location-15">
+            Truro
+          </label>
+        </div>
+        <div class="govuk-checkboxes__item">
+          <input class="govuk-checkboxes__input" id="location-16" name="location" type="checkbox" value="Warrington">
+          <label class="govuk-label govuk-checkboxes__label" for="location-16">
+            Warrington
+          </label>
+        </div>
+      </div>
+    </fieldset>
+  </div>
+
+<form class="form" action="role-grade" method="post">
+<button class="govuk-button" data-module="govuk-button">
+  Continue
+</button>
+</form>
+
+
+    </div>
+  </div>
+
+{% endblock %}

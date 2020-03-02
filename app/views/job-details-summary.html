@@ -1,0 +1,102 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Question page
+{% endblock %}
+
+{% block pageScripts %}
+<script type="text/javascript" src="assets/js/accessible-autocomplete.min.js"></script>
+{% endblock %}
+
+{% block beforeContent %}
+  <a class="govuk-back-link" href="/url/of/previous/page">Back</a>
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+<h1 class ="govuk-heading-xl"> Job details summary
+  </h1>
+  <p class ="govuk-body">
+  Check the details below are correct. We will be using this information to provide a template for the job description.
+      <dl class="govuk-summary-list">
+  <div class="govuk-summary-list__row">
+    <dt class="govuk-summary-list__key">
+      Job area
+    </dt>
+    <dd class="govuk-summary-list__value">
+      Chief Finance Officer (CFO) Group
+    </dd>
+    <dd class="govuk-summary-list__actions">
+      <a class="govuk-link" href="role-area.html">
+        Change<span class="govuk-visually-hidden"> role area</span>
+      </a>
+    </dd>
+  </div>
+  <div class="govuk-summary-list__row">
+    <dt class="govuk-summary-list__key">
+      Directorate
+    </dt>
+    <dd class="govuk-summary-list__value">
+      Digital
+    </dd>
+    <dd class="govuk-summary-list__actions">
+      <a class="govuk-link" href="role-directorate.html">
+        Change<span class="govuk-visually-hidden"> role directorate</span>
+      </a>
+    </dd>
+  </div>
+  <div class="govuk-summary-list__row">
+    <dt class="govuk-summary-list__key">
+      Job title
+    </dt>
+    <dd class="govuk-summary-list__value">
+      Service Designer
+    </dd>
+    <dd class="govuk-summary-list__actions">
+      <a class="govuk-link" href="role-title.html">
+        Change<span class="govuk-visually-hidden"> role title</span>
+      </a>
+    </dd>
+  </div>
+  <div class="govuk-summary-list__row">
+    <dt class="govuk-summary-list__key">
+      Locations
+    </dt>
+    <dd class="govuk-summary-list__value">
+        <p class="govuk-body">London</p>
+      <p class="govuk-body">Manchester</p>
+      <p class="govuk-body">Newcastle</p>
+
+    </dd>
+    <dd class="govuk-summary-list__actions">
+      <a class="govuk-link" href="role-location">
+        Change<span class="govuk-visually-hidden"> role location</span>
+      </a>
+    </dd>
+  </div>
+  <div class="govuk-summary-list__row">
+    <dt class="govuk-summary-list__key">
+    Grade
+    </dt>
+    <dd class="govuk-summary-list__value">
+    Grade 7
+    </dd>
+    <dd class="govuk-summary-list__actions">
+      <a class="govuk-link" href="role-grade.html">
+        Change<span class="govuk-visually-hidden"> role-grade</span>
+      </a>
+    </dd>
+  </div>
+</dl>
+  </div>
+  </div>
+
+  <form class="form" action="job-description" method="post">
+  <button class="govuk-button" data-module="govuk-button">
+  Continue 
+  </button>
+  </form>
+
+{% endblock %}
