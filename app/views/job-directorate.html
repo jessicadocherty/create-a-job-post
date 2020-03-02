@@ -9,7 +9,7 @@
 {% endblock %}
 
 {% block beforeContent %}
-  <a class="govuk-back-link" href="/url/of/previous/page">Back</a>
+  <a class="govuk-back-link" href="job-area">Back</a>
 {% endblock %}
 
 {% block content %}
@@ -21,7 +21,7 @@
   <fieldset class="govuk-fieldset">
     <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">
       <h1 class="govuk-fieldset__heading">
-        Which area are you recruiting for?
+        Which directorate are you recruiting for?
       </h1>
     </legend>
 
@@ -29,37 +29,38 @@
       <div class="govuk-radios__item">
         <input class="govuk-radios__input" id="where-do-you-live" name="where-do-you-live" type="radio" value="england">
         <label class="govuk-label govuk-radios__label" for="where-do-you-live">
-          Chief Finance Officer (CFO) Group
+          Analysis and Data
         </label>
       </div>
       <div class="govuk-radios__item">
         <input class="govuk-radios__input" id="where-do-you-live-2" name="where-do-you-live" type="radio" value="scotland">
         <label class="govuk-label govuk-radios__label" for="where-do-you-live-2">
-          Decentralisation and Growth
+          Commercial
         </label>
       </div>
       <div class="govuk-radios__item">
         <input class="govuk-radios__input" id="where-do-you-live-3" name="where-do-you-live" type="radio" value="wales">
         <label class="govuk-label govuk-radios__label" for="where-do-you-live-3">
-        Housing
+      Digital
         </label>
       </div>
       <div class="govuk-radios__item">
         <input class="govuk-radios__input" id="where-do-you-live-4" name="where-do-you-live" type="radio" value="northern-ireland">
         <label class="govuk-label govuk-radios__label" for="where-do-you-live-4">
-          Legal
+        Finance
         </label>
       </div>
       <div class="govuk-radios__item">
         <input class="govuk-radios__input" id="where-do-you-live-4" name="where-do-you-live" type="radio" value="northern-ireland">
         <label class="govuk-label govuk-radios__label" for="where-do-you-live-4">
-          Local Government and Public Services
+          People Capability and Change
         </label>
       </div>
     </div>
   </fieldset>
 </div>
-  <form class="form" action="role-directorate" method="post">
+
+<form class="form" action="job-title" method="post">
 <button class="govuk-button" data-module="govuk-button">
   Continue
 </button>
