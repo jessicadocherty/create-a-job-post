@@ -1,0 +1,116 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Question page
+{% endblock %}
+
+{% block pageScripts %}
+<script type="text/javascript" src="assets/js/accessible-autocomplete.min.js"></script>
+{% endblock %}
+
+{% block beforeContent %}
+  <a class="govuk-back-link" href="assessing-candidates">Back</a>
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      <div class="govuk-form-group">
+    <fieldset class="govuk-fieldset" aria-describedby="waste-hint">
+      <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">
+        <h1 class="govuk-fieldset__heading">
+          How do you want to assess technical skills?
+        </h1>
+      </legend>
+      <span id="location-hint" class="govuk-hint">
+        Select all that apply
+      </span>
+      <div class="govuk-checkboxes">
+        <div class="govuk-checkboxes__item">
+          <input class="govuk-checkboxes__input" id="location" name="location" type="checkbox" value="London">
+          <label class="govuk-label govuk-checkboxes__label" for="location">
+            Application form question
+          </label>
+        </div>
+        <div class="govuk-checkboxes__item">
+          <input class="govuk-checkboxes__input" id="location-2" name="location" type="checkbox" value="Birkenhead">
+          <label class="govuk-label govuk-checkboxes__label" for="location-2">
+            Interview questions
+          </label>
+        </div>
+        <div class="govuk-checkboxes__item">
+          <input class="govuk-checkboxes__input" id="location-3" name="location" type="checkbox" value="Birmingham">
+          <label class="govuk-label govuk-checkboxes__label" for="location-3">
+            Presentation at interview
+          </label>
+        </div>
+        <div class="govuk-checkboxes__item">
+          <input class="govuk-checkboxes__input" id="location-4" name="location" type="checkbox" value="Bristol">
+          <label class="govuk-label govuk-checkboxes__label" for="location-4">
+          Written exercise at interview
+          </label>
+        </div>
+
+    </fieldset>
+  </div>
+
+  <div class="govuk-form-group">
+<fieldset class="govuk-fieldset" aria-describedby="waste-hint">
+  <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">
+    <h1 class="govuk-fieldset__heading">
+      How do you want to assess behaviours?
+    </h1>
+  </legend>
+  <span id="location-hint" class="govuk-hint">
+    Select all that apply
+  </span>
+  <div class="govuk-checkboxes">
+    <div class="govuk-checkboxes__item">
+      <input class="govuk-checkboxes__input" id="location" name="location" type="checkbox" value="London">
+      <label class="govuk-label govuk-checkboxes__label" for="location">
+        Application form question
+      </label>
+    </div>
+    <div class="govuk-checkboxes__item">
+      <input class="govuk-checkboxes__input" id="location" name="location" type="checkbox" value="London">
+      <label class="govuk-label govuk-checkboxes__label" for="location">
+        Civil Service Judgement Test with application form
+      </label>
+    </div>
+    <div class="govuk-checkboxes__item">
+      <input class="govuk-checkboxes__input" id="location-2" name="location" type="checkbox" value="Birkenhead">
+      <label class="govuk-label govuk-checkboxes__label" for="location-2">
+        Interview questions
+      </label>
+    </div>
+    <div class="govuk-checkboxes__item">
+      <input class="govuk-checkboxes__input" id="location-3" name="location" type="checkbox" value="Birmingham">
+      <label class="govuk-label govuk-checkboxes__label" for="location-3">
+        Presentation at interview
+      </label>
+    </div>
+    <div class="govuk-checkboxes__item">
+      <input class="govuk-checkboxes__input" id="location-4" name="location" type="checkbox" value="Bristol">
+      <label class="govuk-label govuk-checkboxes__label" for="location-4">
+      Written exercise at interview
+      </label>
+    </div>
+
+</fieldset>
+</div>
+
+
+
+<form class="form" action="behaviours" method="post">
+<button class="govuk-button" data-module="govuk-button">
+  Continue
+</button>
+</form>
+
+
+    </div>
+  </div>
+
+{% endblock %}

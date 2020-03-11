@@ -1,0 +1,47 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Question page
+{% endblock %}
+
+{% block pageScripts %}
+<script type="text/javascript" src="assets/js/accessible-autocomplete.min.js"></script>
+{% endblock %}
+
+{% block beforeContent %}
+  <a class="govuk-back-link" href="job-advert-end">Back</a>
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+<h1 class ="govuk-heading-xl"> Vacancy Manager contact details
+  </h1>
+  <p class ="govuk-body"> These details will appear on the job post as a contact point for applicants
+  <div class="govuk-form-group">
+<label class="govuk-label" for="event-name">
+Name
+</label>
+<input class="govuk-input" id="event-name" name="event-name" type="text" aria-describedby="event-name-hint">
+</div>
+<div class="govuk-form-group">
+<label class="govuk-label" for="event-name">
+Email
+</label>
+<input class="govuk-input" id="event-name" name="event-name" type="text" aria-describedby="event-name-hint">
+</div>
+<div class="govuk-form-group">
+  <label class="govuk-label" for="telephone-number">
+  Telephone number
+  </label>
+  <input class="govuk-input govuk-input--width-20" id="telephone-number" name="telephone-number" type="tel" autocomplete="tel">
+</div>
+
+  <form class="form" action="assessing-candidates" method="post">
+  <button class="govuk-button" data-module="govuk-button">
+  Continue
+  </button>
+  </form>
+
+{% endblock %}

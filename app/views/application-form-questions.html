@@ -1,0 +1,66 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Question page
+{% endblock %}
+
+{% block pageScripts %}
+<script type="text/javascript" src="assets/js/accessible-autocomplete.min.js"></script>
+{% endblock %}
+
+{% block beforeContent %}
+  <a class="govuk-back-link" href="behaviours">Back</a>
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      <h1 class ="govuk-heading-xl"> Application form questions
+        </h1>
+
+        <div class="govuk-form-group">
+      <label class="govuk-label" for="event-name">
+<h2 class ="govuk-heading-m"> Seeing the big picture </h2>
+      Question 1
+      </label>
+      <input class="govuk-input" id="event-name" name="event-name" type="text" aria-describedby="event-name-hint">
+      </div>
+    <div class="govuk-!-padding-bottom-3"></div>
+      <h2 class ="govuk-heading-m"> Communicating and influencing </h2>
+      <div class="govuk-form-group">
+      <label class="govuk-label" for="event-name">
+      Question 2
+      </label>
+      <input class="govuk-input" id="event-name" name="event-name" type="text" aria-describedby="event-name-hint">
+      </div>
+      <div class="govuk-!-padding-bottom-3"></div>
+      <h2 class ="govuk-heading-m"> Working together </h2>
+      <div class="govuk-form-group">
+        <label class="govuk-label" for="telephone-number">
+        Question 3
+        </label>
+        <input class="govuk-input" id="telephone-number" name="telephone-number" type="tel" autocomplete="tel">
+      </div>
+      <div class="govuk-!-padding-bottom-3"></div>
+      <h2 class ="govuk-heading-m"> Technical </h2>
+      <div class="govuk-form-group">
+        <label class="govuk-label" for="telephone-number">
+        Question 4
+        </label>
+        <input class="govuk-input" id="telephone-number" name="telephone-number" type="tel" autocomplete="tel">
+      </div>
+
+
+<form class="form" action="lead-sift" method="post">
+<button class="govuk-button" data-module="govuk-button">
+  Continue
+</button>
+</form>
+
+
+    </div>
+  </div>
+
+{% endblock %}

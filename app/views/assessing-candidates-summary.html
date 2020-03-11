@@ -1,0 +1,164 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Question page
+{% endblock %}
+
+{% block pageScripts %}
+<script type="text/javascript" src="assets/js/accessible-autocomplete.min.js"></script>
+{% endblock %}
+
+{% block beforeContent %}
+  <a class="govuk-back-link" href="lead-sift">Back</a>
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+<h1 class ="govuk-heading-xl"> Assessing candidates summary
+  </h1>
+  <p class ="govuk-body">
+  Check the details below are correct. Candidates will be assessed against these criteria and questions.
+      <dl class="govuk-summary-list">
+    <div class="govuk-summary-list__row">
+      <dt class="govuk-summary-list__key">
+        Assessing
+      </dt>
+      <dd class="govuk-summary-list__value">
+          <p class="govuk-body">Technical</p>
+        <p class="govuk-body">Behaviours</p>
+        <dd class="govuk-summary-list__actions">
+          <a class="govuk-link" href="role-title.html">
+            Change<span class="govuk-visually-hidden"> role title</span>
+          </a>
+        </dd>
+  </div>
+  <div class="govuk-summary-list__row">
+    <dt class="govuk-summary-list__key">
+      Assessing Technical with
+    </dt>
+    <dd class="govuk-summary-list__value">
+        <p class="govuk-body">Application form questions</p>
+      <p class="govuk-body">Interview questions</p>
+      <dd class="govuk-summary-list__actions">
+        <a class="govuk-link" href="role-title.html">
+          Change<span class="govuk-visually-hidden"> role title</span>
+        </a>
+      </dd>
+      </div>
+
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">
+          Assessing Behaviours with
+        </dt>
+        <dd class="govuk-summary-list__value">
+            <p class="govuk-body">Application form questions</p>
+          <p class="govuk-body">Interview questions</p>
+          <dd class="govuk-summary-list__actions">
+            <a class="govuk-link" href="role-title.html">
+              Change<span class="govuk-visually-hidden"> role title</span>
+            </a>
+          </dd>
+          </div>
+
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+              Behaviours selected
+            </dt>
+            <dd class="govuk-summary-list__value">
+                <p class="govuk-body">Seeing the big picture</p>
+              <p class="govuk-body">Communicating and influencing</p>
+              <p class="govuk-body">Working together</p>
+              <dd class="govuk-summary-list__actions">
+                <a class="govuk-link" href="role-title.html">
+                  Change<span class="govuk-visually-hidden"> role title</span>
+                </a>
+              </dd>
+              </div>
+
+
+  <div class="govuk-summary-list__row">
+    <dt class="govuk-summary-list__key">
+    Question 1 - Seeing the big picture
+    </dt>
+    <dd class="govuk-summary-list__value">
+      Describe a time where you collaborated with another department in order to deliver a positive outcome.
+    </dd>
+    <dd class="govuk-summary-list__actions">
+      <a class="govuk-link" href="role-title.html">
+        Change<span class="govuk-visually-hidden"> role title</span>
+      </a>
+    </dd>
+  </div>
+
+  <div class="govuk-summary-list__row">
+    <dt class="govuk-summary-list__key">
+    Question 2 - Communicating and influencing
+    </dt>
+    <dd class="govuk-summary-list__value">
+      Describe a time you’ve worked with stakeholders
+    who were skeptical about the effectiveness and usefulness of service design
+    </dd>
+    <dd class="govuk-summary-list__actions">
+      <a class="govuk-link" href="role-title.html">
+        Change<span class="govuk-visually-hidden"> role title</span>
+      </a>
+    </dd>
+  </div>
+
+  <div class="govuk-summary-list__row">
+    <dt class="govuk-summary-list__key">
+    Question 3 - Working together
+    </dt>
+    <dd class="govuk-summary-list__value">
+    What makes a good community of practice?
+
+    </dd>
+    <dd class="govuk-summary-list__actions">
+      <a class="govuk-link" href="role-title.html">
+        Change<span class="govuk-visually-hidden"> role title</span>
+      </a>
+    </dd>
+  </div>
+
+  <div class="govuk-summary-list__row">
+    <dt class="govuk-summary-list__key">
+    Question 4 - Technical
+    </dt>
+    <dd class="govuk-summary-list__value">
+    Tell us about how you have turned research findings into new designs
+
+    </dd>
+    <dd class="govuk-summary-list__actions">
+      <a class="govuk-link" href="role-title.html">
+        Change<span class="govuk-visually-hidden"> role title</span>
+      </a>
+    </dd>
+  </div>
+  <div class="govuk-summary-list__row">
+    <dt class="govuk-summary-list__key">
+    Lead question
+    </dt>
+    <dd class="govuk-summary-list__value">
+    No lead question
+
+    </dd>
+    <dd class="govuk-summary-list__actions">
+      <a class="govuk-link" href="role-title.html">
+        Change<span class="govuk-visually-hidden"> role title</span>
+      </a>
+    </dd>
+  </div>
+
+</div>
+</div>
+
+
+  <form class="form" action="confirmation" method="post">
+  <button class="govuk-button" data-module="govuk-button">
+  Submit form
+  </button>
+  </form>
+
+{% endblock %}
